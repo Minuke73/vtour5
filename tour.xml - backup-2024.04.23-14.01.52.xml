@@ -1,0 +1,58 @@
+﻿<krpano version="1.21" title="">
+
+	<include url="skin/vtourskin.xml" />
+	<include url="skin/customskin.xml" />
+
+	
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+
+
+	<scene name="scene_64-2" title="정동진 해변" onstart="" thumburl="panos/64-2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="103.958" vlookat="24.787" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/64-2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/64-2.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="42.111" atv="31.868" distorted="false" zoom="true" linkedscene="scene_64-1" linkedscene_hoffset="540.0" use3dtransition="true" />
+		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="64.802" atv="17.140" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text" style="custom_hotspotext"  html="정동진 해변 " ath="66.000" atv="13.140" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
+		<hotspot type="text" name="spot4" style="custom_hotspotext2"  html="동해 " ath="150.802" atv="30.140" distorted="false" zoom="false" />
+
+
+	</scene>
+
+	<scene name="scene_64-1" title="정동진 일출" onstart="" thumburl="panos/64-1.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/64-1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/64-1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-167.844" atv="42.228" distorted="false" zoom="true" linkedscene="scene_64-2" linkedscene_hoffset="0.0" use3dtransition="true" />
+
+	</scene>
+
+</krpano>
