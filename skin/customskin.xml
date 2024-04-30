@@ -16,7 +16,7 @@
        shadowrange="4.0"
        shadowangle="45"
        shadowcolor="0x000000"
-       shadowalpha="0.5" padding="0 10 10 10"/> 
+       shadowalpha="0.5" padding="5 10 5 10"/> 
 	   
 	<style name="custom_hotspotext2" type="text" autoalpha="false" alpha="1" bg="false" bgcolor="transparent"
 		css="font-style: italic; font-family:Noto Sans KR; font-size:26px; color:#ffffff; font-weight:400;"
